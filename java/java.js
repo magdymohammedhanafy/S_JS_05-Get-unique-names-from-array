@@ -31,26 +31,15 @@ let tasksArray = [
     ["Mariam Ahmed", "Task 01", "Option 1"],
 ];
 
-
 let filterName=tasksArray.map(function(name){
     return name[0];
 })
 
-for(let i=0;i<filterName.length;i++)
-{
-    for(let j=0;j<filterName.length;j++)
-    {
-        if(i===j)
-        {
-            continue;
-        }
-    if(filterName[i]===filterName[j])
-    {
-       filterName.splice(j,1);
-    }
-    }
-}
-console.log(filterName);
+let unique=new Set(filterName);
+console.log(unique);
+
+
+
 
 
 
